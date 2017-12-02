@@ -1,13 +1,5 @@
 const fs = require('fs')
 
-function cleanRows(row) {
-  for(let i = 16;0<i; i--) {
-    row.replace('\t', '')
-  }
-
-  return row
-}
-
 fs.readFile('./input.txt', 'utf8', (err, input) => {
   /* tried fixing the input, resulted in manual replace
   *  input.split('\n') for rows
