@@ -37,8 +37,7 @@ const noValidPhrases = (phrases = ['pas fra', 'fra pa']) => {
   return `There are #${validPhrases.length} of valid passphrases`
 }
 
-/// PART 2 
-
+// PART 2 
 const noNotAnagramValid = (phrases) => {
   const anagramProofPhrases = (phrase) => {
     phrase = phrase.split(' ')

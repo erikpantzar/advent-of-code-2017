@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-fs.readFile('./daytwoinput.txt', 'utf8', (err, input) => {
+fs.readFile('./day2input.txt', 'utf8', (err, input) => {
   const data = input.split('\n') // rows
               .filter(l => l.length > 0) // lastline
               .map(m => m.split('\t')) // columns
